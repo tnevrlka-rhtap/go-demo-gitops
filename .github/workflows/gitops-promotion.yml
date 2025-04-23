@@ -159,6 +159,10 @@ jobs:
         bash /work/rhtap/download-sbom-from-url-in-attestation.sh
         echo "• upload-sbom-to-trustification"
         bash /work/rhtap/upload-sbom-to-trustification.sh
+    - name: Summary
+      run: |
+        echo "• summary"
+        bash /work/rhtap/summary.sh
     - name: Done
       run: |
         echo "Done"
